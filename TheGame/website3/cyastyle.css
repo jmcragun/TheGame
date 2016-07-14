@@ -19,6 +19,8 @@ h1 {
 p {
 	font-family: 'Lunchds';
 	color: #cfcfcf;
+	text-align: center;
+	font-size: 18px;
 }
 #next {
 	background-color: black;

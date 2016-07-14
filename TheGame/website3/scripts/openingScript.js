@@ -13,14 +13,11 @@ $(document).ready(function () {
 			if (userName.length == 0) {
 				alert("Come on now, ye do have a name, don't ye?");
 			} else {
-				var nameAccepted = function () {
-					confirm("So, yer name is " + userName + "?");
-				}
-				nameAccepted();
+				var nameAccepted = confirm("So, yer name is " + userName + "?");
 				if (nameAccepted == true) {
 					$("#greeting").fadeOut(1000);
 					$("#whatsYourName").fadeOut(1000);
-					$("<p>Well then, " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>").hide().appendTo("body").fadeIn(1000);
+					$("<p>Well then " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>").hide().appendTo("body").fadeIn(1000);
 					nextCounter++;
 				}
 			}
