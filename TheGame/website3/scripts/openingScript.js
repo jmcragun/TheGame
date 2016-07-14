@@ -16,8 +16,10 @@ $(document).ready(function () {
 				var nameAccepted = function () {
 					confirm("So, yer name is " + userName + "?");
 				}
+				nameAccepted();
 				if (nameAccepted == true) {
 					$("#greeting").fadeOut(1000);
+					$("#whatsYourName").fadeOut(1000);
 					$("<p>Well then, " + userName + ", a world in turmoil rests at your feet. Will you save it, or shall you destroy it?</p>").hide().appendTo("body").fadeIn(1000);
 					nextCounter++;
 				}
